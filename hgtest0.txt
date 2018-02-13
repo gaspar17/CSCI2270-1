@@ -1,0 +1,15 @@
+this is a text file made with the purpose of
+testing the algorithm im writing which tests the number of words
+in a document and the number of times which they occur
+this algorithm is intended to ignore certain words in the
+english language with particularly high usage
+the document it is reading from will be the first book
+of the popular book series hunger games
+hopefully this algorithm will run without fail and make
+me very happy
+
+it is contingent on the lack of capital letters in the
+document from which it is reading which is a little bit
+unfortunate but should not be a very big deal
+
+finished
