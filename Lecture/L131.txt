@@ -1,0 +1,39 @@
+Lecture notes from 1/31
+
+you traverse an array using a for loop going through each index
+in a linked list you use while(p != NULL)
+
+build a linked list for length n where key is 1-10
+  int i = 1
+  node *head = new node(i, NULL) this is the head of the list
+  node *p = head
+  i++
+  while(i <= 10,){
+    node *n = new node(i, NULL)
+    p -> next = n this sets p -> next as a pointer to n
+    p = n
+    i++
+  }
+  p = head puts you back at the beginning of the linked list
+
+Inserting a node
+  node will either become a new head node, a middle node, or new last node
+  since we are using singly linked lists, we have to know previous node
+
+  Search
+    node *search(value, node *head)
+      node *current = head;
+      while(curret != NULL){
+        if(current -> key == value =){
+          return current;
+        }
+        current = current -> next;
+      }
+      return NULL;
+
+  insertNode(previous, value, head)
+    node *left = search(previous, head)
+    node *n = new node(value, NULL)
+    if(left == NULL) //not found
+      n -> next = head;
+      head = n; //replaces head pointer with the newly created node pointer 
