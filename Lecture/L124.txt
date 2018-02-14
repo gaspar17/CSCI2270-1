@@ -1,0 +1,33 @@
+//Lecture 1/24 Notes
+
+Number bases:
+  binary: base 2
+  decimal: base 10
+  hexadecimal: base 16: 0-F
+
+  what do values mean in binary:
+    whether you include a value for a given position (0 no 1 yes)
+    8 bits make up one byte
+    4 bits is a nibble
+
+  what do values mean in hexadecimal
+    uses only nibbles
+
+     8  4  2  1  8  4  2  1
+    [1][0][1][0][1][0][1][0]
+          A          A
+
+    Decimal = 170
+    Hexadecimal = AA
+
+    0x734 = 011100110100
+
+  Pointer - variable that stores a memory address
+    Different than a regular variable which directly stores a value
+    array name acts as a pointer to the first index of the array
+    *(arrayName+1) = arrayName[1]
+    Meaning +1 in terms of bytes depends on type of array. for ints +1 is 4 bytes
+
+    changing the value stored in a pointer in an outside function changes it in all other functions
+
+1/26
