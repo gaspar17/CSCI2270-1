@@ -44,7 +44,7 @@ void CommunicationNetwork::addCity(std::string newCityName, std::string previous
 
 void CommunicationNetwork::printNetwork(){
   City *temp = head;
-  cout << "===CURRENT PATH===" << endl << "NULL <- " << endl;
+  cout << "===CURRENT PATH===" << endl << "NULL <- ";
   while(temp -> next != nullptr){
     cout << temp -> cityName << " <-> ";
     temp = temp -> next;
@@ -79,8 +79,17 @@ void CommunicationNetwork::buildNetwork(){
   head = LA;
   tail = Bos;
 
-  CommunicationNetwork::printNetwork();
+  //CommunicationNetwork::printHeadTail();
 
+  CommunicationNetwork::printNetwork();
+  /*City *temp = head;
+  cout << "===CURRENT PATH===" << endl << "NULL <- ";
+  while(temp -> next != nullptr){
+    cout << temp -> cityName << " <-> ";
+    temp = temp -> next;
+  }
+  cout << temp -> cityName << " -> NULL" << endl << "==================" << endl;
+  */
 }
 
 void CommunicationNetwork::transmitMsg(char* filename){
@@ -138,4 +147,9 @@ void CommunicationNetwork::deleteNetwork(){
   }
   delete[] tail;
   head = NULL;
+}
+
+void CommunicationNetwork::printHeadTail(){
+  cout << head -> cityName << endl;
+  cout << tail -> cityName << endl;
 }

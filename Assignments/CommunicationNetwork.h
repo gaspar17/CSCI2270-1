@@ -35,6 +35,7 @@ public:
     void printNetwork();
     void deleteCity(std::string);
     void deleteNetwork();
+    void printHeadTail();
 protected:
 private:
     City *head;
